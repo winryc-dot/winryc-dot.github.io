@@ -6,15 +6,51 @@ Plain HTML/CSS — no build tools, no npm needed.
 ## Files
 
 ```
-index.html      Home page
-about.html      Longer bio, education, skills
-projects.html   Projects + experience timeline
-contact.html    LinkedIn + email
+index.html                 Home page
+about.html                 Longer bio, education, skills
+projects.html               Projects + experience cards
+contact.html                LinkedIn + email
+
+rover-chassis.html          Project detail page
+stairmaster-robot.html      Project detail page
+static-mixer.html           Project detail page
+booz-allen.html              Experience detail page
+construction-intern.html    Experience detail page
+math-tutor.html              Experience detail page
+
 assets/
   style.css     All page styling
   photo.jpg     Your photo
   projects/     Project photos
 ```
+
+## Filling in the detail pages
+
+Each card on the Projects page links to its own detail page (e.g. the
+"Modular rover chassis" card links to `rover-chassis.html`). Open any
+of those files and look for this near the bottom:
+
+```html
+<div class="detail-body">
+  <p>Text</p>
+</div>
+```
+
+Replace `Text` with your full write-up. You can add more `<p>...</p>`
+paragraphs for longer entries — just keep each one wrapped in its own
+`<p>` tags.
+
+Each detail page also has a "Skills" subsection near the bottom, in
+the same format:
+
+```html
+<div class="detail-skills">
+  <h4>Skills</h4>
+  <p>Text</p>
+</div>
+```
+
+Replace that `Text` with the skills relevant to that project or role.
 
 ## Editing content
 
