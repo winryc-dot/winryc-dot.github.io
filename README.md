@@ -1,6 +1,6 @@
 # Winry Cigna — Portfolio Website
 
-A simple portfolio site: Home, About, Resume, Projects, Contact.
+A simple portfolio site: Home, About, Projects, Contact.
 Plain HTML/CSS — no build tools, no npm needed.
 
 ## Files
@@ -8,21 +8,18 @@ Plain HTML/CSS — no build tools, no npm needed.
 ```
 index.html      Home page
 about.html      Longer bio, education, skills
-resume.html     Embedded resume PDF + download button
 projects.html   Projects + experience timeline
 contact.html    LinkedIn + email
 assets/
   style.css     All page styling
   photo.jpg     Your photo
-  resume.pdf    Your resume (replace this file to update your resume)
+  projects/     Project photos
 ```
 
 ## Editing content
 
 Every page is plain HTML — open any `.html` file in a text editor (even
-Notepad or TextEdit works) and edit the text between the tags. To swap
-your resume, just replace `assets/resume.pdf` with a new file of the
-same name.
+Notepad or TextEdit works) and edit the text between the tags.
 
 ## Put this on GitHub
 
