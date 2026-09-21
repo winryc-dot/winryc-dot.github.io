@@ -33,18 +33,36 @@
 
     <div class="detail-tag">ME 375 PROJECT</div>
     <h2>Parallel Manipulator</h2>
-    <div class="detail-meta"></div>
+    <div class="detail-meta">January 2026 – May 2026</div>
 
     <div class="detail-body">
-      <p>Text</p>
+      <p>A class project for ME 375, using a flexible magnet to control a mechanical system.</p>
     </div>
 
     <div class="detail-skills">
       <h4>Skills</h4>
       <p>Text</p>
     </div>
+
+    <div class="detail-gallery">
+      <h4>More Photos</h4>
+      <div class="gallery">
+        <!-- Add more photos here, following this pattern:
+        <button class="gallery-item" data-caption="Caption for this photo">
+          <img src="assets/projects/your-image.jpg" alt="Describe the image">
+        </button>
+        -->
+        <p class="gallery-empty">More photos coming soon.</p>
+      </div>
+    </div>
   </div>
 </section>
+
+<div id="lightbox" class="lightbox" hidden>
+  <button class="lightbox-close" aria-label="Close">&times;</button>
+  <img id="lightbox-img" src="" alt="">
+  <div id="lightbox-caption" class="lightbox-caption"></div>
+</div>
 
 <footer class="site">
   <div class="wrap">
@@ -53,5 +71,6 @@
   </div>
 </footer>
 
+<script src="assets/gallery.js" defer></script>
 </body>
 </html>

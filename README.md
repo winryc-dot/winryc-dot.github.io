@@ -52,6 +52,33 @@ the same format:
 
 Replace that `Text` with the skills relevant to that project or role.
 
+## Adding more photos to a project
+
+Every detail page has a "More Photos" section near the bottom, ready
+for extra images:
+
+```html
+<div class="detail-gallery">
+  <h4>More Photos</h4>
+  <div class="gallery">
+    <!-- Add more photos here, following this pattern:
+    <button class="gallery-item" data-caption="Caption for this photo">
+      <img src="assets/projects/your-image.jpg" alt="Describe the image">
+    </button>
+    -->
+    <p class="gallery-empty">More photos coming soon.</p>
+  </div>
+</div>
+```
+
+To add a photo: put the image file in `assets/projects/`, then add a
+`<button class="gallery-item" ...>` block like the one shown in the
+comment (copy it, uncomment it, and update the image path, alt text,
+and caption). Delete the `<p class="gallery-empty">` line once you've
+added at least one photo. Clicking any photo opens it full-size with
+its caption — that's handled automatically by `assets/gallery.js`, so
+you don't need to touch any JavaScript.
+
 ## Editing content
 
 Every page is plain HTML — open any `.html` file in a text editor (even
